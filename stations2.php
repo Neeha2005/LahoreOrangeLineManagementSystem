@@ -86,7 +86,7 @@ $stations = $stmt->fetchAll(PDO::FETCH_ASSOC);
     </div>
     <div class="nav-buttons">
       <button class="login-btn" onclick="location.href='login.php'">Login</button>
-      <button class="register-btn" onclick="location.href='register2.php'">Register</button>
+      <button class="register-btn" onclick="location.href='/register1.php'">Register</button>
     </div>
   </nav>
 

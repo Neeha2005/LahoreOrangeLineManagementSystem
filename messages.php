@@ -25,39 +25,43 @@ $messages = $stmt->fetchAll(PDO::FETCH_ASSOC);
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     .messages-container {
-      background-color: rgba(255, 255, 255, 0.05);
+      background-color: rgba(255, 255, 255, 0.9); /* Changed to light background */
       padding: 2rem;
       border-radius: 10px;
       max-width: 800px;
       margin: 0 auto;
-      color: white;
+      color: #333; /* Changed text to dark */
     }
     .message-card {
-      background-color: rgba(255, 255, 255, 0.08);
+      background-color: rgba(255, 255, 255, 0.95); /* Light card background */
       padding: 1rem;
       margin-bottom: 1.5rem;
       border-radius: 8px;
+      color: #222; /* Dark text */
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
     .message-card h3 {
       margin-bottom: 0.5rem;
-      color: #ff9800;
+      color: #e67e22; /* Orange header */
     }
     .message-card .user-msg {
       font-style: italic;
       margin-bottom: 0.5rem;
+      color: #444; /* Dark gray */
     }
     .message-card .admin-reply {
-      background-color: rgba(0, 128, 0, 0.2);
+      background-color: rgba(46, 204, 113, 0.15); /* Light green background */
       padding: 0.8rem;
-      border-left: 4px solid limegreen;
+      border-left: 4px solid #2ecc71; /* Green border */
       border-radius: 5px;
+      color: #222; /* Dark text */
     }
     .message-card small {
       display: block;
       margin-top: 0.5rem;
-      color: #ccc;
+      color: #666; /* Dark gray */
     }
-  </style>
+</style>
 </head>
 <body>
 <section class="hero-section">
